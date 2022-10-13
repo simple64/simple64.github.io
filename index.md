@@ -1,123 +1,47 @@
 ---
 layout: default
 ---
+simple64 is an emulator based on a heavily modified version of mupen64plus-core, and ParaLLEl RSP/RDP. It includes a GUI, netplay, automatic updater, controller configuration, and much more!
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+It should give you the best out-of-the-box experience available for N64 gaming. There are no plugins to download.
 
-[Link to another page](./another-page.html).
+Some of the things that are different from regular mupen64plus:
+* GUI with controller configuration
+* VRU support
+* Fully LLE boot process
+* Instruction and data cache emulation
+* Much more accurate CPU, RSP and interrupt cycle timing (no "CountPerOp" or "Counter Factor")
+* 64DD cartridge port support (saving works)
+* Native Vulkan rendering (no OpenGL)
+* Better CPU/RSP synchronization, important for homebrew titles (libdragon games work)
+* More accurate screen refresh rate timing
+* Cloud based netplay (no port forwarding)
+* Other stuff I may have forgotten
 
-There should be whitespace between paragraphs.
+### FAQ and System Requirements ###
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+See the [FAQ](https://github.com/simple64/simple64/wiki/simple64-FAQ) on the Wiki for answers to common questions.
 
-# Header 1
+simple64 has higher system requirements than most N64 emulators. Your GPU needs to support Vulkan 1.1, and you need a fairly good CPU to run the games at full speed. If nothing happens when you go to start a game, it is likely because your GPU doesn't support Vulkan 1.1.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+### Discord ###
 
-## Header 2
+Come chat with the community at: [https://discord.gg/tsR3RtYynZ](https://discord.gg/tsR3RtYynZ)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+### Netplay ###
 
-### Header 3
+You can read the netplay wiki [here](https://github.com/simple64/simple64/wiki/Netplay-Guide)
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+simple64 now includes netplay! No need to worry about hosting a server. The server is hosted in the cloud. Netplay is free to use and is included in the latest builds of simple64.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+Wanting to play online? Come join the #netplay channel on Discord: [https://discord.gg/tsR3RtYynZ](https://discord.gg/tsR3RtYynZ). New rooms are announced in this channel when they are created.
 
-#### Header 4
+### Support The Project ###
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+You can support the project on Patreon [here](https://www.patreon.com/loganmc10)
 
-##### Header 5
+You can support the project on GitHub [here](https://github.com/sponsors/loganmc10)
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+### Bug Reports ###
 
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+Bugs can be filed at [https://github.com/simple64/simple64/issues](https://github.com/simple64/simple64/issues).

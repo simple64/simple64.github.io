@@ -1,5 +1,6 @@
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
+title: simple64
+description: An easy to use N64 emulator. Available for Windows and Linux
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
+download_url: https://github.com/simple64/simple64/releases
